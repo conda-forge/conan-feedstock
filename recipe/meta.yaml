@@ -45,6 +45,8 @@ requirements:
     - pluginbase >=0.5
 
 test:
+  requires:
+    - pip
   imports:
     - conans
     - conans.build_info
@@ -67,6 +69,7 @@ test:
     - conans.server.store
     - conans.util
   commands:
+    - pip check
     - conan --help
     - conan_build_info --help
 
