@@ -1,6 +1,6 @@
 {% set name = "conan" %}
-{% set version = "1.43.2" %}
-{% set sha256 = "338e0cd9b814bc36f9c01bc9cc535629786abaa8a67759526aa08c329a219a24" %}
+{% set version = "1.43.4" %}
+{% set sha256 = "69a2efddfc9d8117ce3ec64aad52afe79f3bb0faf83855aaaf78a2ac81fbd028" %}
 
 package:
   name: {{ name|lower }}
@@ -36,11 +36,11 @@ requirements:
     - six >=1.10.0,<=1.16.0
     - python-node-semver ==0.6.1
     - distro >=1.0.2,<=1.6.0
-    - future >=0.16.0,<0.19.0
     - pygments >=2.0,<3.0
     - tqdm >=4.28.1,<5
     - jinja2 >=2.9,<3
     - python-dateutil >=2.7.0,<3
+    - markupsafe <2.1
     - bottle >=0.12.8,<0.13
     - pluginbase >=0.5
 
