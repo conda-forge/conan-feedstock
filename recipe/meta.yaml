@@ -1,6 +1,6 @@
 {% set name = "conan" %}
-{% set version = "1.48.1" %}
-{% set sha256 = "59e3e4c3aae0587b96300875212865b1d4d56adacfb8815d01f09a7cbb3c12fc" %}
+{% set version = "1.51.3" %}
+{% set sha256 = "5f7f2a39e4778250b02813606bd9e7a16616e430b4c889da22aaec99e02cc945" %}
 
 package:
   name: {{ name|lower }}
@@ -22,11 +22,11 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
-    - pyjwt >=1.4.0,<2.0.0
+    - python >=3.6
+    - pyjwt >=2.4.0,<3.0.0
     - requests >=2.25,<3.0.0
     - urllib3 >=1.26.6,<1.27
     - colorama >=0.3.3,<0.5.0
@@ -38,7 +38,7 @@ requirements:
     - distro >=1.0.2,<=1.6.0
     - pygments >=2.0,<3.0
     - tqdm >=4.28.1,<5
-    - jinja2 >=2.9,<4.0.0
+    - jinja2 >=3.0,<4.0.0
     - python-dateutil >=2.7.0,<3
     - bottle >=0.12.8,<0.13
     - pluginbase >=0.5
