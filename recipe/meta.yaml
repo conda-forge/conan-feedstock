@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - conan=conans.conan:run
@@ -30,7 +30,7 @@ requirements:
     - requests >=2.25,<3.0.0
     - urllib3 >=1.26.6,<1.27
     - colorama >=0.3.3,<0.5.0
-    - pyyaml >=3.11,<6.0
+    - pyyaml >=3.11,<=6.0
     - patch-ng >=1.17.4, <1.18
     - fasteners >=0.14.1
     - six >=1.10.0,<=1.16.0
