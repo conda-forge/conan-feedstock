@@ -46,22 +46,23 @@ test:
     - pip
   imports:
     - conans
-    - conans.tools
-    - conans.tools.cmake
-    - conans.tools.gnu
-    - conans.tools.google
-    - conans.tools.apple
-    - conans.tools.meson
-    - conans.tools.intel
-    - conans.tools.microsoft
-    - conans.tools.qbs
-    - conans.tools.env
-    - conans.tools.system
-    - conans.tools.files
-    - conans.tools.layout
-    - conans.tools.scm
-    - conans.tools.build
-    - conans.errors
+    - conan
+    - conan.tools
+    - conan.tools.cmake
+    - conan.tools.gnu
+    - conan.tools.google
+    - conan.tools.apple
+    - conan.tools.meson
+    - conan.tools.intel
+    - conan.tools.microsoft
+    - conan.tools.qbs
+    - conan.tools.env
+    - conan.tools.system
+    - conan.tools.files
+    - conan.tools.layout
+    - conan.tools.scm
+    - conan.tools.build
+    - conan.errors
   commands:
     - pip check
     - conan --help
