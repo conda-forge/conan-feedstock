@@ -1,6 +1,6 @@
 {% set name = "conan" %}
-{% set version = "1.59.0" %}
-{% set sha256 = "161c8f2d3193c209a1e9525fe7d6c600688da529a9864e6ef557133e93131952" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "e3385cd4775f9b12d1cf1ef3c2f87d2b657f65d3f55cf652739d8e09ba4d41db" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,6 @@ build:
   entry_points:
     - conan=conans.conan:run
     - conan_server=conans.conan_server:run
-    - conan_build_info=conans.build_info.command:run
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
@@ -26,51 +25,47 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - pyjwt >=2.4.0,<3.0.0
+    # client requirements
     - requests >=2.25,<3.0.0
     - urllib3 >=1.26.6,<1.27
-    - colorama >=0.3.3,<0.5.0
-    - pyyaml >=3.11,<=6.0
+    - colorama >=0.4.3,<0.5.0
+    - pyyaml >=5.1,<=6.0
     - patch-ng >=1.17.4, <1.18
-    - fasteners >=0.14.1
+    - fasteners >=0.15
     - six >=1.10.0,<=1.16.0
-    - python-node-semver ==0.6.1
-    - distro >=1.0.2,<=1.6.0
-    - pygments >=2.0,<3.0
-    - tqdm >=4.28.1,<5
+    - distro >=1.4.0,<=1.8.0
     - jinja2 >=3.0,<4.0.0
-    - python-dateutil >=2.7.0,<3
+    - python-dateutil >=2.8.0,<3
+    # server requirements
     - bottle >=0.12.8,<0.13
     - pluginbase >=0.5
+    - pyjwt >=2.4.0,<3.0.0
 
 test:
   requires:
     - pip
   imports:
     - conans
-    - conans.build_info
-    - conans.client
-    - conans.client.build
-    - conans.client.cmd
-    - conans.client.conf
-    - conans.client.generators
-    - conans.client.rest
-    - conans.client.store
-    - conans.client.tools
-    - conans.model
-    - conans.search
-    - conans.server
-    - conans.server.conf
-    - conans.server.crypto
-    - conans.server.crypto.jwt
-    - conans.server.rest
-    - conans.server.service
-    - conans.server.store
-    - conans.util
+    - conan
+    - conan.tools
+    - conan.tools.cmake
+    - conan.tools.gnu
+    - conan.tools.google
+    - conan.tools.apple
+    - conan.tools.meson
+    - conan.tools.intel
+    - conan.tools.microsoft
+    - conan.tools.qbs
+    - conan.tools.env
+    - conan.tools.system
+    - conan.tools.files
+    - conan.tools.layout
+    - conan.tools.scm
+    - conan.tools.build
+    - conan.errors
   commands:
     - pip check
     - conan --help
-    - conan_build_info --help
 
 about:
   home: https://conan.io
