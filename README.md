@@ -1,11 +1,11 @@
-About conan
-===========
+About conan-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/conan-feedstock/blob/main/LICENSE.txt)
 
 Home: https://conan.io
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/conan-feedstock/blob/main/LICENSE.txt)
 
 Summary: Conan C/C++ package manager
 
