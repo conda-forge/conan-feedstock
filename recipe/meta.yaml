@@ -1,6 +1,6 @@
 {% set name = "conan" %}
-{% set version = "2.0.17" %}
-{% set sha256 = "56251a16297e5893e21641c33063cbeaec9b0c28fed2ea2242ddc0e4a6aa350d" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "18633b6a4598fa58156cc56b85ffa988ef852728fb6e040a87a50bf443f207f4" %}
 
 package:
   name: {{ name|lower }}
