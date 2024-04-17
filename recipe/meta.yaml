@@ -1,6 +1,6 @@
 {% set name = "conan" %}
-{% set version = "2.2.2" %}
-{% set sha256 = "3a4324764a496518f8ebe302a5d47d51a2c064784c2a0d691f0c1a034caa6971" %}
+{% set version = "1.64.0" %}
+{% set sha256 = "0f9694f98d3fb9b62ca5869cd41c4cbd0434c5f5d9fb2da52e8a6f6b44300157" %}
 
 package:
   name: {{ name|lower }}
@@ -28,14 +28,17 @@ requirements:
     # client requirements
     - requests >=2.25,<3.0.0
     - urllib3 >=1.26.6,<1.27
-    - colorama >=0.4.3,<0.5.0
-    - pyyaml >=5.1,<=6.0
-    - patch-ng >=1.17.4, <1.18
-    - fasteners >=0.15
+    - colorama >=0.3.3,<0.5.0
+    - pyyaml >=3.11,<6.1
+    - patch-ng >=1.17.4,<1.18
+    - fasteners >=0.14.1
     - six >=1.10.0,<=1.16.0
-    - distro >=1.4.0,<=1.8.0
+    - python-node-semver 0.6.1
+    - distro >=1.0.2,<=1.8.0
+    - pygments >=2.0,<3.0
+    - tqdm >=4.28.1,<5
     - jinja2 >=3.0,<4.0.0
-    - python-dateutil >=2.8.0,<3
+    - python-dateutil >=2.7.0,<3
     # server requirements
     - bottle >=0.12.8,<0.13
     - pluginbase >=0.5
