@@ -29,7 +29,7 @@ requirements:
     - requests >=2.25,<3.0.0
     - urllib3 >=1.26.6,<1.27
     - colorama >=0.4.3,<0.5.0
-    - pyyaml >=5.1,<=6.0
+    - pyyaml >=6.0,<=7.0
     - patch-ng >=1.17.4, <1.18
     - fasteners >=0.15
     - six >=1.10.0,<=1.16.0
