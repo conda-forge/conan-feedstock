@@ -1,6 +1,6 @@
 {% set name = "conan" %}
-{% set version = "2.2.3" %}
-{% set sha256 = "8968d6f235255b688f2d7391168fe348b36ba9759ed0c3bcaf49f0cc74bcf60d" %}
+{% set version = "2.3.0" %}
+{% set sha256 = "2bdc8ad9d9a3564fe17a3bbcda20cc3e34e48c0c27c218f9191aad7a90d1d403" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - conan=conans.conan:run
