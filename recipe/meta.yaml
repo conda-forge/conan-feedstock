@@ -1,6 +1,6 @@
 {% set name = "conan" %}
-{% set version = "1.59.0" %}
-{% set sha256 = "161c8f2d3193c209a1e9525fe7d6c600688da529a9864e6ef557133e93131952" %}
+{% set version = "1.60.0" %}
+{% set sha256 = "7b34a193ffaa583eddde8f1bee2b758384db411844f5818271e48171a784327f" %}
 
 package:
   name: {{ name|lower }}
@@ -35,7 +35,7 @@ requirements:
     - fasteners >=0.14.1
     - six >=1.10.0,<=1.16.0
     - python-node-semver ==0.6.1
-    - distro >=1.0.2,<=1.6.0
+    - distro >=1.0.2,<=1.8.0
     - pygments >=2.0,<3.0
     - tqdm >=4.28.1,<5
     - jinja2 >=3.0,<4.0.0
