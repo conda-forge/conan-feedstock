@@ -23,7 +23,7 @@ build:
 requirements:
   host:
     - python >=3.6
-    - pip
+    - pip ==24.0
   run:
     - python >=3.6
     - pyjwt >=2.4.0,<3.0.0
@@ -45,7 +45,7 @@ requirements:
 
 test:
   requires:
-    - pip
+    - pip ==24.0
   imports:
     - conans
     - conans.build_info
