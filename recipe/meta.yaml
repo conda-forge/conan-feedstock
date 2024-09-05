@@ -1,6 +1,6 @@
 {% set name = "conan" %}
-{% set version = "2.6.0" %}
-{% set sha256 = "042c6255e29076b6a66483b51348238f9ebaaa8efeeaca37e99abc53d92de16c" %}
+{% set version = "2.7.0" %}
+{% set sha256 = "4dde2da2f22d8318f63dba6ddfd914a32e5b44ede07e94ee45a1aed41420f5d7" %}
 
 package:
   name: {{ name|lower }}
@@ -31,7 +31,7 @@ requirements:
     - urllib3 >=1.26.6,<1.27
     - colorama >=0.4.3,<0.5.0
     - pyyaml >=6.0,<7.0
-    - patch-ng >=1.17.4, <1.18
+    - patch-ng >=1.18.0, <1.19
     - fasteners >=0.15
     - distro >=1.4.0,<=1.8.0
     - jinja2 >=3.0,<4.0.0
