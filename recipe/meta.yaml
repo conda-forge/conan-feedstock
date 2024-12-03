@@ -1,6 +1,6 @@
 {% set name = "conan" %}
-{% set version = "2.9.3" %}
-{% set sha256 = "4c3f0ce7302fe081c603080c8babb981dc1ab7ed698480e378b389bcef700a2b" %}
+{% set version = "2.10.0" %}
+{% set sha256 = "b269bf6aace968986c1247fcf7801452b3871be0a8e4a30b714c1a85dbd15ea6" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
