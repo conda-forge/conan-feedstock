@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - conan=conans.conan:run
@@ -21,11 +21,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     # client requirements
     - requests >=2.25,<3.0.0
     - urllib3 >=1.26.6,<1.27
@@ -44,6 +44,7 @@ requirements:
 test:
   requires:
     - pip
+    - python {{ python_min }}
   imports:
     - conans
     - conan
